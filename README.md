@@ -1,17 +1,24 @@
-# water_delivery_system
+# KIU Fresh
 
-A new Flutter project.
+KIU Fresh is a Flutter MVP for a water-refilling ordering and delivery platform.
 
-## Getting Started
+## Current MVP
+- Customer, delivery, and administrator demo roles
+- Product catalogue
+- Checkout and local order creation
+- Simulated M-Pesa/cash choice
+- Customer order tracking
+- Delivery status workflow
+- Admin operational dashboard
+- Local in-memory mock store
 
-This project is a starting point for a Flutter application.
+## Important
+Authentication, M-Pesa, persistence, notifications, and backend authorization are **simulated/not production-ready** in this build. The next commercial milestone is a real backend, persistent database, secure authentication, and server-verified M-Pesa integration.
 
-A few resources to get you started if this is your first Flutter project:
+## Run
+```bash
+flutter pub get
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+On the demo login screen, enter any non-empty phone/email and password, then choose Customer, Delivery, or Admin.
