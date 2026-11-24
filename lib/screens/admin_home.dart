@@ -36,7 +36,7 @@ class _AdminHomeState extends State<AdminHome> {
         title: const Text(
           'Admin Dashboard',
           style: TextStyle(fontWeight: FontWeight.bold),
-        ),
+        ), backgroundColor: Colors.cyan,
         actions: [
           IconButton(
             onPressed: () {

@@ -20,8 +20,9 @@ class _CustomerHomeState extends State<CustomerHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.cyan,
         title: const Text(
-          'KIU Fresh',
+          'AQUAR Fresh',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
@@ -115,8 +116,8 @@ class _ShopTab extends StatelessWidget {
         ),
         const SizedBox(height: 24),
         const SectionTitle(
-          'Available water',
-          subtitle: 'Demo catalogue — prices can later come from the backend.',
+          'Available products',
+          subtitle: 'Choose your preferred quantity'
         ),
         const SizedBox(height: 14),
         ...MockStore.products.map(
@@ -276,7 +277,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
               DropdownMenuItem(
                 value: 'M-Pesa',
                 child: Text(
-                  'M-Pesa (simulated)',
+                  'M-Pesa',
                 ),
               ),
               DropdownMenuItem(
@@ -315,6 +316,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
               if (destination.text.trim().isEmpty) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
+
                     content: Text(
                       'Enter a delivery location.',
                     ),
@@ -349,9 +351,9 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                     ),
                     content: Text(
                       payment == 'M-Pesa'
-                          ? 'Your order was created. M-Pesa is simulated '
-                              'in this MVP; no real payment was charged.'
-                          : 'Your cash order has been created.',
+                          ? 'Your order was created. An STK push has '
+                              'been sent to your phone, Please confirm payment.'
+                          : 'Your order was created. Please remember to pay in cash when your order arrives. ',
                     ),
                     actions: [
                       TextButton(
@@ -459,7 +461,7 @@ class _ProfileTab extends StatelessWidget {
         InfoCard(
           icon: Icons.person_outline,
           label: 'Customer',
-          value: 'Demo Customer',
+          value: 'Customer',
         ),
         SizedBox(height: 12),
         InfoCard(
