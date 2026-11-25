@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: const Text('Login'), backgroundColor: Colors.cyan,),
+    appBar: AppBar(title: const Text('Login')),
     body: SafeArea(child: SingleChildScrollView(padding: const EdgeInsets.all(24), child: Form(key: _formKey, child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const SizedBox(height: 24),
       const Text('Welcome back', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
