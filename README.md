@@ -1,24 +1,22 @@
-# KIU Fresh
+# AQUAR Fresh Website
 
-KIU Fresh is a Flutter MVP for a water-refilling ordering and delivery platform.
+A responsive web prototype based on the supplied AQUAR-Fresh Flutter MVP.
 
-## Current MVP
-- Customer, delivery, and administrator demo roles
-- Product catalogue
-- Checkout and local order creation
-- Simulated M-Pesa/cash choice
-- Customer order tracking
-- Delivery status workflow
-- Admin operational dashboard
-- Local in-memory mock store
+## Run locally
+1. Extract this folder.
+2. Open `index.html` in a modern browser.
 
-## Important
-Authentication, M-Pesa, persistence, notifications, and backend authorization are **simulated/not production-ready** in this build. The next commercial milestone is a real backend, persistent database, secure authentication, and server-verified M-Pesa integration.
+No build tools or dependencies are required.
 
-## Run
-```bash
-flutter pub get
-flutter run
-```
+## Included
+- Public AQUAR Fresh landing page
+- Water product catalogue based on the source project (20 L refill KSh 100, 10 L refill KSh 60, 5 L bottled water KSh 180)
+- Cart and checkout
+- Demo M-Pesa/cash payment selection
+- Customer order view
+- Admin order status dashboard
+- Delivery workflow
+- Browser localStorage persistence
 
-On the demo login screen, enter any non-empty phone/email and password, then choose Customer, Delivery, or Admin.
+## Important limitations
+This is a frontend demo. The source Flutter project describes authentication, payments, persistence, notifications and backend authorization as simulated/not production-ready. This website likewise does not process real M-Pesa payments, authenticate users securely, or store orders in a shared database. It uses browser localStorage for demo persistence. A production release needs a backend API, database, secure authentication and server-verified M-Pesa integration.
