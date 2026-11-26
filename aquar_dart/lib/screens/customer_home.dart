@@ -977,7 +977,7 @@ class ProfileScreen extends StatelessWidget {
           const SizedBox(height: 12),
 
           const Text(
-            'Carson Ndeto',
+            'Carson Ndanya',
             style: TextStyle(
               color: textDark,
               fontSize: 20,
